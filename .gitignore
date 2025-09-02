@@ -1,0 +1,24 @@
+# ----- OS/IDE -----
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# ----- Power BI -----
+*.pbix.local
+*.pbit.local
+FrownSnapShot*.zip
+PerformanceTraces.zip
+
+# ----- Office temps -----
+~$*
+*.tmp
+
+# ----- Python/Notebook (if any) -----
+__pycache__/
+.ipynb_checkpoints/
+
+# ----- Data (optional) -----
+# Uncomment to exclude raw sources from git
+# Sources/
