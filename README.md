@@ -29,6 +29,7 @@
   <img src="docs/screenshots/stores.png" alt="Stores page" width="46%"/>
   <img src="docs/screenshots/operations.png" alt="Operations page" width="46%"/><br/>
   <img src="docs/screenshots/shipment.png" alt="Shipment page" width="46%"/>
+  <img src="docs/screenshots/model.png" alt="Data Model page" width="46%"/>
 </p>
 
 ---
