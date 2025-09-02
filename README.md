@@ -5,7 +5,7 @@
 ![Data Modeling](https://img.shields.io/badge/Data%20Modeling-Star%20Schema%20•%20Inactive%20Dates%20•%20Role%20Dims-4CAF50)
 ![SQL](https://img.shields.io/badge/SQL-SQL%20Server%20•%20OPEX%20joins-CC2927?logo=microsoftsqlserver&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-Repo%20Structure%20•%20LFS%20for%20PBIX-000000?logo=github)
-![LinkedIn](https://img.shields.io/badge/LinkedIn-Open%20to%20Opportunities-0A66C2?logo=linkedin&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > **Note**: This project uses **demo/synthetic data**. Some anomalies may appear. The goal is to demonstrate **hard skills** (data modeling, **complex DAX**, visualization, and **business interpretation**), **not** a real business scenario.  
 > **COGS scope**: COGS **excludes most cost elements** → treat **Profit%** as **Contribution%**.  
@@ -16,7 +16,6 @@
 ## 🏆 Project overview
 - **End‑to‑end**: Power Query (ingest/shape) → star schema → DAX measures → storytelling dashboards.
 - **Complex DAX**: time intelligence (YTD/FYTD/SPLY), **inactive relationship** for shipments with `USERELATIONSHIP`, multi‑currency switch via a **disconnected slicer**, and **What‑If** scenarios.
-- **Business thinking**: page‑level insights and stakeholder recommendations, not just charts.
 - **Engineering quality**: measure table, naming conventions, README/docs, repo layout, Git LFS for PBIX.
 
 ### 📸 Snapshot (click to view full size)
@@ -109,16 +108,49 @@ adventure-works-power-bi/
 │   screenshots/ (page images)
 └─Sources/ (demo data)
 ```
+---
+
+## 📈 Business Insights
+
+- **Plan shortfall & seasonality**: Actual sales trail plan (≈ 90% achievement). Peak in 2019, decline in 2020 (partial year). Q1 contributes outsized share.
+
+- **Category concentration**: Revenue heavily skewed to Mobile Devices; Components minimal. Margin tiles look very high because COGS excludes many costs → the metric reads like Contribution%, not full Gross Margin.
+
+- **Store Pareto**: A few retailers (Costco, K-Mart, Best Buy, Staples) drive the bulk of sales; the long tail misses plan materially.
+
+- **Basket & brands**: AVG receipt is flat/down; top brands (Dell, Huawei, HP, Samsung) dominate—clear cross-sell potential into accessories.
+
+- **Customers & channels**: Office/Engineer segments spend more; Internet/Ads are strongest acquisition sources; referrals meaningful.
+
+- **Fulfilment**: 100% shipped, avg ~4.1 days; Tuesdays are consistently slowest; variance by city/store suggests process gaps.
+
+- **OPEX discipline**: Actuals track plan closely (~98% achievement); major spend in Salary/Marketing.
+
+## Recommendations
+
+- **Tune planning**: Add a Plan Diagnostics waterfall (price × volume × mix × distribution). Apply seasonality factors and re-baseline 2020 as partial.
+
+- **De-risk category mix**: Protect Mobile Devices supply; grow Computers/Accessories via bundles and targeted promos.
+
+- **Lift store productivity**: Segment stores (A/B/C), set sales per salesperson/sqm targets, replicate top-store playbooks, coach/redeploy laggards.
+
+- **Grow basket size**: Track attach-rate KPIs and push accessory bundles at checkout to lift AVG receipt.
+
+- **Optimize acquisition**: Shift budget toward Internet/Ads (higher quality); run referral incentives; manage by CAC→CLV.
+
+- **Service SLAs**: Add P80 delivery days and % ≤ 3 days KPIs; fix Tuesday bottlenecks (carrier capacity/cut-off); publish city/store league tables.
+
+- **Data hygiene**: Fill 2020 gaps, ensure daily FX coverage (carry-forward), and keep sources parameterized for portability.
+
+**Note: This is demo/synthetic data; anomalies may appear**
 
 ---
 
-## 👤 Author & Links
-**Author:** Mika Smagulova  
-**GitHub:** https://github.com/Mikadataa 
-**LinkedIn:** https://www.linkedin.com/in/smagulova/
+## 👩‍💻 Author
+**Mikadataa**  
+🔗 [LinkedIn](https://www.linkedin.com/in/smagulova/) | 🐙 [GitHub](https://github.com/Mikadataa)
 
 ---
 
 ## 📄 License
-MIT — see [LICENSE](LICENSE).
-# adventure-works-power-bi
+This project is licensed under the MIT License.
